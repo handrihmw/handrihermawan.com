@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Devcussion 14.0: Membangun Website yang Accessibility Friendly",
+    "image": "images/1670553613633.webp",
+    "link": "https://www.youtube.com/watch?v=7pdprHtWDeE",
+    "role": "Speaker",
+    "date": "Dec 8, 2022"
+  },
+  {
+    "title": "Devcussion 8.0: A Beginers Guide to Web 3.0",
+    "image": "images/1658578800479.webp",
+    "link": "https://www.youtube.com/watch?v=dY7UsDLSbLw",
+    "role": "Moderator",
+    "date": "Nov 29, 2021"
+  },
+  {
+    "title": "Belajar Dasar Pemrograman Javascript",
+    "image": "images/1658579023420.webp",
+    "link": "https://www.youtube.com/watch?v=8_fSNzlStoM",
+    "role": "Moderator",
+    "date": "May 24, 2022"
+  },
+  {
+    "title": "Membuat Website dengan HTML, CSS, dan Javascript",
+    "image": "images/1658578517378.webp",
+    "link": "https://www.youtube.com/watch?v=usjz90CtGDg",
+    "role": "Speaker",
+    "date": "Jul 23, 2021"
+  },
+  {
+    "title": "Core Web Vitals and Plugins for Your Wordpress Sites Best Performance",
+    "image": "images/1658578361621.webp",
+    "link": "https://www.youtube.com/watch?v=-AsaYNKkbKo",
+    "role": "Speaker",
+    "date": "Jun 30, 2021"
+  },
+  {
+    "title": "Niagahoster Event: Audit Your Site",
+    "image": "images/1658578475446.webp",
+    "link": "https://www.youtube.com/watch?v=2h-7PEkiGP4",
+    "role": "Speaker",
+    "date": "Jul 24, 2020"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "Front End Developer",
+    "place": "Niagahoster • Yogyakarta",
+    "date": "Jun 2020 - Present",
+    "task": "Revamp the website interface, create design system, create documentation programs, and website performance audits."
+  },
+  {
+    "role": "Front End Developer",
+    "place": "VIVA Media Baru • Jakarta Timur",
+    "date": "Feb 2019 - Jun 2020",
+    "task": "Developed online media portals, Updating ad promotion plugin, and Monitoring Search Engine Optimization."
+  },
+  {
+    "role": "Web Developer",
+    "place": "Astrindo Senayasa • Jakarta Utara",
+    "date": "Sep 2018 - Feb 2019",
+    "task": "Developed Human Resource Management System applications, as well as new application releases into test and production."
+  },
+  {
+    "role": "Programming Spesialist",
+    "place": "Kantor Staf Presiden RI • Jakarta Pusat",
+    "date": "Mar 2018 - Jun 2018",
+    "task": "Analyze database requirements, modify user interfaces, and coordinate with local government agencies."
+  },
+  {
+    "role": "Front End Developer",
+    "place": "Bappeda Kota Yogyakarta • Yogyakarta",
+    "date": "May 2017 - Aug 2017",
+    "task": "Updated the new interface of the Bappeda Kota Yogyakarta website and Analyzed the new user interface requirements."
+  },
+  {
+    "role": "Digital Marketing",
+    "place": "Relasi Inti Media • Yogyakarta",
+    "date": "Oct 2016 - Jun 2017",
+    "task": "Prepare interesting social media content and Constantly update with social media trends and interact with followers."
+  }
+]
