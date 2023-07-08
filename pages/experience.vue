@@ -6,7 +6,7 @@ import experiences from "@/assets/json/experience.json";
 const items = ref(experiences);
 </script>
 <template>
-  <div class="mx-auto mb-10 max-w-screen-xl overflow-hidden px-6 lg:px-1">
+  <div class="mx-auto my-10 max-w-screen-xl overflow-hidden px-6 lg:px-1">
     <ExperienceHero />
     <ExperienceCard
       v-for="item in items"

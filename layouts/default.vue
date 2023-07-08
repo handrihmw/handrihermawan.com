@@ -3,8 +3,7 @@
     <header class="fixed z-10 w-full">
       <MainHeader />
     </header>
-    <main class="mb-10">
-      <div class="p-9" />
+    <main class="my-10">
       <slot />
     </main>
     <footer>

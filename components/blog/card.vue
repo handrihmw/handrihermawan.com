@@ -12,11 +12,11 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   path: "/",
-  title: "no-title",
-  date: "no-date",
-  description: "no-description",
+  title: "This is Title",
+  date: "00",
+  description: "This is Description",
   image: "/nuxt-blog/no-image_cyyits.png",
-  alt: "no-alt",
+  alt: "This is Alt",
   ogImage: "/nuxt-blog/no-image_cyyits.png",
   published: false,
 });

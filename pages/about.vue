@@ -6,7 +6,7 @@ const items = ref(abouts);
 </script>
 
 <template>
-  <div class="mx-auto mt-10 max-w-screen-lg overflow-hidden px-6 lg:px-1">
+  <div class="mx-auto my-10 max-w-screen-lg overflow-hidden px-6 lg:px-1">
     <div
       class="justify-content-center md:justify-content-left group flex flex-col"
     >

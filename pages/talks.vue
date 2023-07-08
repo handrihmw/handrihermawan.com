@@ -5,7 +5,7 @@ import talks from "@/assets/json/talks.json";
 const items = ref(talks);
 </script>
 <template>
-  <div class="mx-auto mb-10 max-w-screen-xl overflow-hidden px-6 lg:px-1">
+  <div class="mx-auto my-10 max-w-screen-xl overflow-hidden px-6 lg:px-1">
     <TalkHero />
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
       <TalkCard

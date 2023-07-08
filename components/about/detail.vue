@@ -12,7 +12,7 @@ const props = withDefaults(defineProps<AboutData>(), {
 </script>
 
 <template>
-  <div>
+  <div class="mt-10">
     <img
       class="h-48 w-48 rounded-md object-cover"
       loading="lazy"

@@ -1,9 +1,9 @@
 <template>
   <nav class="fixed w-full p-2 bg-gray-100 dark:bg-gray-900 md:p-6">
     <div class="flex items-center justify-between p-2 lg:px-32">
-      <div>
+      <NuxtLink to="/" class="flex items-center">
         <LogoHandri />
-      </div>
+      </NuxtLink>
       <div class="md:hidden">
         <button @click="drawer">
           <svg

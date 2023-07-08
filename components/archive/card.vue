@@ -14,13 +14,13 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   path: "/",
-  title: "no-title",
-  date: "no-date",
-  month: "Jun",
+  title: "This is Title",
+  date: "This is Date",
+  month: "Apr",
   year: "2023",
-  description: "no-description",
+  description: "This is Description",
   image: "/nuxt-blog/no-image_cyyits.png",
-  alt: "no-alt",
+  alt: "This is Alt",
   ogImage: "/nuxt-blog/no-image_cyyits.png",
   published: false,
 })
