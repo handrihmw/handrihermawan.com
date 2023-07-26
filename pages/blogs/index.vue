@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto my-10 max-w-screen-xl overflow-hidden px-6 lg:px-1">
+  <div class="mx-auto my-10 max-w-screen-xl overflow-hidden px-6 xl:px-1">
     <ArchiveHero />
     <div class="space-y-5 my-5">
       <template v-for="post in formatedData" :key="post.title">
@@ -41,7 +41,7 @@ const formatedData = computed(() => {
 })
 
 useHead({
-  title: 'Archive',
+  title: 'Blog',
   meta: [
     {
       name: 'description',

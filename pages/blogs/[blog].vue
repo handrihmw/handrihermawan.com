@@ -1,17 +1,20 @@
 <template>
-  <div class="mx-auto mb-8 mt-10 max-w-5xl px-8 py-6 lg:px-1">
+  <div class="mx-auto mb-8 mt-10 max-w-4xl px-8 py-6 xl:px-1">
     <header class="mt-10">
       <h1
-        class="leading-25 mb-4 text-4xl font-thin text-gray-800 dark:text-gray-200"
+        class="leading-25 mb-4 text-3xl text-gray-800 dark:text-gray-200 md:text-4xl"
       >
         {{ data.title || "" }}
       </h1>
-      <p class="text-sm text-gray-700 dark:text-gray-300">
+      <p
+        class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-400"
+      >
+        <Icon name="heroicons-outline:calendar-days" class="text-lg" />
         Published {{ data.date || "" }}
       </p>
     </header>
     <div
-      class="prose dark:prose-invert font-thin prose-slate prose prose-xs mx-auto max-w-5xl text-gray-800 sm:prose-sm md:prose-lg prose-headings:no-underline prose-a:no-underline prose-a:text-gray-800 prose-pre:max-w-xs prose-img:rounded-md dark:text-gray-300 dark:prose-a:text-gray-200 sm:prose-pre:max-w-full"
+      class="prose-xs prose prose prose-slate mx-auto max-w-4xl font-thin text-gray-800 dark:prose-invert sm:prose-sm md:prose-lg prose-headings:no-underline prose-a:text-gray-800 prose-a:no-underline prose-pre:max-w-xs prose-img:rounded-md dark:text-gray-300 dark:prose-a:text-gray-200 sm:prose-pre:max-w-full"
     >
       <ContentRenderer :value="articles">
         <template #empty>

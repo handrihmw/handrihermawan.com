@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mb-8 mt-5 max-w-screen-xl px-8 py-6 lg:px-1">
+  <div class="mx-auto my-10 max-w-screen-xl px-8 py-6 xl:px-1">
     <div class="flex flex-col">
       <div class="flex gap-2 items-center mb-2">
         <div class="text-xl italic text-gray-700 dark:text-gray-300 lg:text-2xl">hey!</div>

@@ -1,9 +1,9 @@
 <template>
   <svg
+    class="fill-current text-gray-800 dark:text-gray-200"
     width="143"
     height="22"
     viewBox="0 0 143 22"
-    fill="rgb(168 85 247)"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path

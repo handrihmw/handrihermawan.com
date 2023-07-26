@@ -27,7 +27,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <article class="group m-2 overflow-hidden">
+  <article class="group m-2">
     <NuxtLink :to="path" class="grid grid-cols-1 gap-1 sm:grid-cols-10 group-hover:opacity-90">
       <div
         class="inline-block content-center pt-3 pb-4 text-left sm:col-span-1"

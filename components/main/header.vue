@@ -1,13 +1,15 @@
 <template>
-  <nav class="fixed w-full p-2 bg-gray-100 dark:bg-gray-900 md:p-6">
-    <div class="flex items-center justify-between p-2 lg:px-32">
-      <NuxtLink to="/" class="flex items-center">
+  <nav
+    class="dark:bg-dark fixed w-full bg-gray-100 bg-opacity-50 p-2 text-gray-900 backdrop-blur-lg backdrop-filter dark:bg-gray-900 dark:bg-opacity-50 dark:text-gray-100 md:p-4"
+  >
+    <div class="flex items-center justify-between p-2 md:px-8 xl:px-32">
+      <NuxtLink to="/" class="flex items-center" aria-label="logo handri">
         <LogoHandri />
       </NuxtLink>
-      <div class="md:hidden">
-        <button @click="drawer">
+      <div class="lg:hidden">
+        <button @click="drawer" aria-label="menu mobile">
           <svg
-            class="h-8 w-8 fill-current text-gray-200"
+            class="h-8 w-8 fill-current text-gray-800 dark:text-gray-200"
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -19,17 +21,22 @@
           </svg>
         </button>
       </div>
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <ul
-          class="flex space-x-8 text-sm font-base uppercase text-gray-800 dark:text-gray-200"
+          class="font-base flex items-center space-x-8 text-sm uppercase text-gray-800 dark:text-gray-200"
         >
           <li v-for="menuItem in menuItems" :key="menuItem.path">
             <NuxtLink
+              class="flex items-center gap-2"
               :to="menuItem.path"
               :class="{ active: isActive(menuItem.path) }"
               active-class="border-b-2 border-fuchsia-500 pb-1"
               @click="isOpen = false"
             >
+              <Icon
+                :name="`heroicons-outline:${menuItem.icon}`"
+                class="text-xl"
+              />
               {{ menuItem.title }}
             </NuxtLink>
           </li>
@@ -59,16 +66,21 @@
         </div>
       </transition>
       <aside
-        class="fixed left-0 top-0 z-30 h-full w-64 transform overflow-auto bg-gray-900 p-5 text-gray-200 transition-all duration-300 ease-in-out"
+        class="h-100 fixed left-0 top-0 z-30 w-full transform overflow-hidden rounded-b-xl bg-gray-200 p-5 text-gray-200 shadow-md backdrop-blur-xl backdrop-filter transition-all duration-300 ease-in-out dark:bg-gray-800"
         :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
       >
-        <div class="close">
+        <div class="close flex items-center justify-between">
+          <MainMode />
+          <div @click="isOpen = false">
+            <LogoHandri />
+          </div>
           <button
-            class="absolute right-0 top-0 mr-4 mt-4"
+            class="rounded-full border border-gray-500 p-2"
             @click="isOpen = false"
+            aria-label="close menu"
           >
             <svg
-              class="h-6 w-6"
+              class="h-6 w-6 text-gray-800 dark:text-gray-200"
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -81,18 +93,24 @@
           </button>
         </div>
 
-        <span @click="isOpen = false" class="flex w-full items-center p-4">
-          <LogoHandri />
-        </span>
-
-        <ul class="divide-y divide-gray-800">
-          <li v-for="menuItem in menuItems" :key="menuItem.path">
+        <ul class="mt-5">
+          <li
+            v-for="menuItem in menuItems"
+            :key="menuItem.path"
+            class="py-3 text-gray-800 dark:text-gray-200"
+          >
             <NuxtLink
               :to="menuItem.path"
               :class="{ active: isActive(menuItem.path) }"
               @click="isOpen = false"
             >
-              {{ menuItem.title }}
+              <div class="flex items-center gap-2">
+                <Icon
+                  :name="`heroicons-outline:${menuItem.icon}`"
+                  class="text-xl"
+                />
+                <span>{{ menuItem.title }}</span>
+              </div>
             </NuxtLink>
           </li>
         </ul>
@@ -131,11 +149,11 @@ onBeforeUnmount(() => {
 });
 
 const menuItems = [
-  { path: "/", title: "Home" },
-  { path: "/blogs", title: "Blog" },
-  { path: "/talks", title: "Talk" },
-  { path: "/experience", title: "Experience" },
-  { path: "/about", title: "About" },
+  { path: "/", icon: "home", title: "Home" },
+  { path: "/blogs", icon: "document-text", title: "Blog" },
+  { path: "/talks", icon: "chat", title: "Talk" },
+  { path: "/experience", icon: "briefcase", title: "Experience" },
+  { path: "/about", icon: "information-circle", title: "About" },
 ];
 
 const isActive = (path) => {

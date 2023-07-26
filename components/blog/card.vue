@@ -28,7 +28,7 @@ withDefaults(defineProps<Props>(), {
   >
     <NuxtLink :to="path">
       <NuxtImg
-        class="w-full rounded-t-md object-cover object-center transition-all duration-500 group-hover:scale-[1.02] md:h-36 lg:h-48"
+        class="w-full rounded-t-md object-cover object-center transition-all duration-500 group-hover:scale-105 md:h-36 lg:h-48"
         :src="image"
         :alt="alt"
       />

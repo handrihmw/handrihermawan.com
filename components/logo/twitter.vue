@@ -1,6 +1,6 @@
 <template>
   <svg
-    fill="#e5e7eb"
+    class="fill-current text-gray-800 dark:text-gray-200"
     height="36"
     width="36"
     version="1.1"

@@ -26,8 +26,8 @@ const props = withDefaults(defineProps<AboutData>(), {
     >
       {{ props.name }}
     </h1>
-    <p class="mt-2 font-light capitalize text-gray-700 dark:text-gray-400">
-      {{ props.place }}
+    <p class="mt-2 flex items-center gap-2 font-light capitalize text-gray-700 dark:text-gray-400">
+      <Icon name="heroicons-outline:map-pin" class="text-xl text-gray-700 dark:text-gray-400" /> {{ props.place }}
     </p>
     <p
       class="font-sm mb-4 mt-8 max-w-screen-sm text-gray-800 dark:text-gray-300"

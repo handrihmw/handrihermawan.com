@@ -1,7 +1,7 @@
 <template>
   <div class="pt-3 pb-5">
     <div class="container mx-auto max-w-5xl px-6 text-center">
-      <div class="p-2 text-xs text-gray-400">
+      <div class="p-2 text-xs text-gray-600 dark:text-gray-300">
         © 1995 - Present Handri Hermawan. All right reserved.
       </div>
     </div>

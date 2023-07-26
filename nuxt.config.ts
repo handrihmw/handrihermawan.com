@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     strict: true,
   },
 
+  css: [
+    '@/assets/css/main.css',
+  ],
+
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
@@ -34,5 +38,19 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'dracula',
     },
+  },
+
+  extends: [
+    'nuxt-seo-kit'
+  ],
+
+  runtimeConfig: {
+    indexable: true,
+    public: {
+      siteUrl: 'https://handrihermawan.com',
+      siteName: 'Handri Hermawan',
+      siteDescription: 'Welcome to my Personal Website!',
+      language: 'en',
+    }
   },
 })

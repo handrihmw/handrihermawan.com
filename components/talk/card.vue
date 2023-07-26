@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<TalkData>(), {
 <template>
   <NuxtLink :to="props.path">
     <article
-      class="as-card bg-dark-100 overflow-hidden rounded-md border border-gray-200 dark:border-gray-700 dark:bg-gray-800"
+      class="as-card max-w-screen-lg overflow-hidden rounded-lg border border-gray-400 border-opacity-30 bg-transparent shadow-sm dark:bg-gray-800"
     >
       <div class="aspect-w-3 aspect-h-2">
         <img
@@ -32,12 +32,20 @@ const props = withDefaults(defineProps<TalkData>(), {
         >
           {{ props.title }}
         </h2>
-        <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">
-          {{ props.role }}
-        </p>
-        <p class="mt-2 text-xs text-gray-800 dark:text-gray-400">
-          {{ props.date }}
-        </p>
+        <div class="mt-4 flex items-center gap-3">
+          <p
+            class="flex items-center gap-2 text-sm text-gray-800 dark:text-gray-400"
+          >
+            <Icon name="heroicons-outline:user-circle" class="text-lg" />
+            {{ props.role }}
+          </p>
+          <p
+            class="flex items-center gap-2 text-sm text-gray-800 dark:text-gray-400"
+          >
+            <Icon name="heroicons-outline:calendar-days" class="text-lg" />
+            {{ props.date }}
+          </p>
+        </div>
       </div>
     </article>
   </NuxtLink>

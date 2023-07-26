@@ -2,6 +2,7 @@
   <div class="bg-gray-100 dark:bg-gray-900">
     <NuxtLayout>
       <NuxtLoadingIndicator />
+      <SeoKit />
       <NuxtPage />
     </NuxtLayout>
   </div>
@@ -63,6 +64,18 @@ useHead({
     },
   ],
 });
+useSchemaOrg([
+  definePerson({
+    name: 'Handri Hermawan',
+    image: 'http://localhost:3000/images/handrihmw.webp',
+    sameAs: [
+      'https://github.com/handrihmw',
+    ]
+  }),
+  defineWebSite({/* ... */}),
+  defineWebPage(),
+])
+
 </script>
 
 <style>

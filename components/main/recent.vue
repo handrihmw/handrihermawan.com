@@ -32,16 +32,24 @@ useHead({
 </script>
 
 <template>
-  <div class="mx-auto max-w-screen-xl px-6 lg:px-1">
-    <div class="flex items-baseline justify-between text-gray-800 dark:text-gray-200">
+  <div class="mx-auto max-w-screen-xl px-6 xl:px-1">
+    <div
+      class="flex items-baseline justify-between text-gray-800 dark:text-gray-200 mt-10"
+    >
       <h2 class="mb-6 text-xl font-semibold lg:text-2xl">Recent Post</h2>
       <div class="text-xs md:text-sm">
-        <a href="blogs">View all Posts →</a>
+        <NuxtLink
+          to="/blogs"
+          class="flex items-center"
+          aria-label="view all blog"
+        >
+          View all Posts →
+        </NuxtLink>
       </div>
     </div>
   </div>
   <div
-    class="mx-auto mb-8 grid max-w-screen-xl grid-cols-1 px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-1"
+    class="mx-auto mb-8 grid max-w-screen-xl grid-cols-1 px-6 md:grid-cols-2 xl:grid-cols-4 xl:px-1"
   >
     <template v-for="post in formatedData" :key="post.title">
       <BlogCard
