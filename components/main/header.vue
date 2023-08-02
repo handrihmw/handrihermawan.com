@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="dark:bg-dark fixed w-full bg-gray-100 bg-opacity-50 p-2 text-gray-900 backdrop-blur-lg backdrop-filter dark:bg-gray-900 dark:bg-opacity-50 dark:text-gray-100 md:p-4"
+    class="dark:bg-dark fixed lg:flex w-full justify-center bg-gray-100 bg-opacity-50 px-8 lg:px-2 p-2 text-gray-900 backdrop-blur-lg backdrop-filter dark:bg-transparent dark:bg-opacity-50 dark:text-gray-100 md:p-4"
   >
-    <div class="flex items-center justify-between p-2 md:px-8 xl:px-32">
-      <NuxtLink to="/" class="flex items-center" aria-label="logo handri">
+    <div class="flex max-w-screen-xl items-center justify-between">
+      <NuxtLink to="/" class="flex items-center lg:hidden" aria-label="logo handri">
         <LogoHandri />
       </NuxtLink>
       <div class="lg:hidden">
@@ -30,7 +30,7 @@
               class="flex items-center gap-2"
               :to="menuItem.path"
               :class="{ active: isActive(menuItem.path) }"
-              active-class="border-b-2 border-fuchsia-500 pb-1"
+              active-class="border-b-2 border-blue-400 pb-1"
               @click="isOpen = false"
             >
               <Icon
@@ -66,7 +66,7 @@
         </div>
       </transition>
       <aside
-        class="h-100 fixed left-0 top-0 z-30 w-full transform overflow-hidden rounded-b-xl bg-gray-200 p-5 text-gray-200 shadow-md backdrop-blur-xl backdrop-filter transition-all duration-300 ease-in-out dark:bg-gray-800"
+        class="h-100 fixed left-0 top-0 z-30 w-full transform overflow-hidden rounded-b-xl bg-slate-200 p-5 text-gray-200 shadow-md backdrop-blur-xl backdrop-filter transition-all duration-300 ease-in-out dark:bg-cyan-950"
         :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
       >
         <div class="close flex items-center justify-between">
@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
 
 const menuItems = [
   { path: "/", icon: "home", title: "Home" },
-  { path: "/blogs", icon: "document-text", title: "Blog" },
+  { path: "/blogs", icon: "newspaper", title: "Blog" },
   { path: "/talks", icon: "chat", title: "Talk" },
   { path: "/experience", icon: "briefcase", title: "Experience" },
   { path: "/about", icon: "information-circle", title: "About" },

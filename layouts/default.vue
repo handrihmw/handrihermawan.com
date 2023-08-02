@@ -1,5 +1,5 @@
 <template>
-  <div class="h-container font-outfit bg-gradient-to-b from-gray-100 dark:from-gray-900 to-gray-200 dark:to-gray-800">
+  <div class="h-container font-outfit bg-gradient-to-b from-gray-100 dark:from-gray-900 via-slate-200 dark:via-cyan-950 to-slate-100 dark:to-cyan-900">
     <header class="fixed z-10 w-full">
       <MainHeader />
     </header>

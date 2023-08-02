@@ -27,20 +27,20 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <article class="group m-2">
+  <article class="group max-w-screen-md overflow-hidden p-4 hover:rounded-lg dark:hover:bg-cyan-950/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-md hover:bg-slate-100">
     <NuxtLink :to="path" class="grid grid-cols-1 gap-1 sm:grid-cols-10 group-hover:opacity-90">
       <div
-        class="inline-block content-center pt-3 pb-4 text-left sm:col-span-1"
+        class="inline-block content-center pt-2 pb-4 text-left sm:col-span-1"
       >
-        <div class="text-2xl text-gray-800 dark:text-gray-300 font-light uppercase">
+        <div class="text-2xl text-gray-800 dark:text-gray-400 font-light uppercase">
           {{ month }}
         </div>
-        <div class="text-md text-gray-800 dark:text-gray-300 font-light">
+        <div class="text-md text-gray-800 dark:text-gray-400 font-light">
           {{ year }}
         </div>
       </div>
       <div class="py-2 sm:col-span-8">
-        <h2 class="line-clamp-1 text-ellipsis pb-1 text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-fuchsia-500">
+        <h2 class="line-clamp-1 text-ellipsis pb-1 text-xl font-semibold text-gray-800 dark:text-gray-300">
           {{ title }}
         </h2>
         <p

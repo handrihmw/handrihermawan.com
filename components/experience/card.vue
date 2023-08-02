@@ -6,26 +6,40 @@ const props = withDefaults(defineProps<Experiencedata>(), {
   place: "This is Place",
   date: "This is Date",
   task: "This is Task",
+  stack: ["This is Stack"],
 });
 </script>
 
 <template>
   <article
-    class="mb-4 overflow-hidden rounded-lg border max-w-screen-lg border-gray-400 border-opacity-30 bg-transparent shadow-sm dark:bg-gray-800"
+    class="mb-4 flex max-w-screen-md flex-col gap-3 md:gap-10 overflow-hidden px-4 py-6 bg-transparent hover:rounded-lg hover:bg-slate-100/50 dark:hover:bg-cyan-950/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-md sm:flex-col md:flex-row"
   >
-    <div class="px-4 pb-6 pt-5">
-      <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-300">
-        {{ props.role }}
-      </h2>
-      <p class="mt-3 flex items-center gap-2 text-sm text-gray-800 dark:text-gray-300">
-        <Icon name="heroicons-outline:briefcase" class="text-xl text-gray-800 dark:text-gray-300" /> {{ props.place }}
-      </p>
-      <p class="mt-2 flex items-center gap-2 text-xs text-gray-700 dark:text-gray-400">
-        <Icon name="heroicons-outline:calendar-days" class="text-xl text-gray-700 dark:text-gray-400" /> {{ props.date }}
-      </p>
-      <p class="mt-3 text-sm text-gray-800 dark:text-gray-400">
-        {{ props.task }}
-      </p>
+    <div
+      class="w-full pt-1 text-sm font-thin uppercase text-gray-700 dark:text-gray-400 md:w-1/5"
+    >
+      {{ props.date }}
+    </div>
+    <div class="w-4/5">
+      <div class="flex flex-col gap-2">
+        <div
+          class="text-md flex flex-row flex-wrap gap-1 text-gray-800 dark:text-gray-300 md:flex-nowrap md:items-center md:gap-2"
+        >
+          <span>{{ props.role }}</span> • <span>{{ props.place }}</span>
+        </div>
+        <p class="text-sm text-gray-800 dark:text-gray-400">
+          {{ props.task }}
+        </p>
+        <ul class="flex flex-wrap" aria-label="Technologies used">
+          <li v-for="(stack, index) in props.stack" :key="index" class="mr-1.5 mt-2">
+            <div
+              class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+            >
+              {{ stack }}
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </article>
 </template>
+

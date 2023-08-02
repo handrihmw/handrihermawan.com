@@ -5,7 +5,7 @@
     >
       Work
       <span
-        class="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent lg:pr-8"
+        class="bg-gradient-to-br from-cyan-500 to-emerald-500 bg-clip-text text-transparent lg:pr-8"
         >Experience</span
       >
     </h1>

@@ -16,9 +16,9 @@ useHead({
 })
 </script>
 <template>
-  <div class="mx-auto my-10 max-w-screen-xl overflow-hidden px-6 xl:px-1">
+  <div class="mx-auto my-12 max-w-screen-xl overflow-hidden px-6 xl:px-1">
     <TalkHero />
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mb-2">
       <TalkCard
       v-for="item in items"
       :key="item.title"

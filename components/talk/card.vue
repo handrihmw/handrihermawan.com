@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<TalkData>(), {
 <template>
   <NuxtLink :to="props.path">
     <article
-      class="as-card max-w-screen-lg overflow-hidden rounded-lg border border-gray-400 border-opacity-30 bg-transparent shadow-sm dark:bg-gray-800"
+      class="as-card max-w-screen-lg overflow-hidden bg-slate-100 drop-shadow-md hover:bg-slate-100 dark:bg-cyan-900/50 rounded-lg dark:hover:bg-cyan-900/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg"
     >
       <div class="aspect-w-3 aspect-h-2">
         <img

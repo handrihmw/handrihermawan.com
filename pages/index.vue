@@ -13,7 +13,7 @@ useHead({
 </script>
 
 <template>
-  <main class="container max-w-8xl mx-auto my-10">
+  <main class="container max-w-8xl mx-auto my-12">
     <MainHero />
     <MainRecent />
   </main>

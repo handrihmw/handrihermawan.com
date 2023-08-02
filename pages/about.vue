@@ -17,7 +17,7 @@ useHead({
 </script>
 
 <template>
-  <div class="mx-auto my-10 max-w-screen-xl overflow-hidden px-6 xl:px-1">
+  <div class="mx-auto my-12 max-w-screen-xl overflow-hidden px-6 xl:px-1">
     <AboutHero />
     <AboutDetail
       v-for="item in items"
@@ -29,13 +29,5 @@ useHead({
       :image="item.image"
       :alt="item.name"
     />
-    <div class="justify-left flex gap-3">
-      <LogoVue />
-      <LogoTypescript />
-      <LogoPhp />
-      <LogoTailwind />
-      <LogoVscode />
-      <LogoFigma />
-    </div>
   </div>
 </template>
