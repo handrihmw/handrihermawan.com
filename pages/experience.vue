@@ -16,7 +16,7 @@ useHead({
 });
 </script>
 <template>
-  <div class="mx-auto my-12 max-w-screen-xl overflow-hidden px-6 xl:px-1">
+  <div class="mx-auto my-12 max-w-screen-xl overflow-hidden px-6 xl:px-2">
     <ExperienceHero />
     <ExperienceCard
       v-for="item in items"

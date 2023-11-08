@@ -2,5 +2,6 @@ export interface Experiencedata {
   role: string
   place: string
   date: string
-  task: string
+  task: string | string[]
+  stack: string | string[]
 }

@@ -24,7 +24,7 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <article
-    class="group m-2 overflow-hidden bg-slate-100 drop-shadow-md dark:bg-cyan-900/50 rounded-lg hover:bg-slate-100 dark:hover:bg-cyan-950/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg lg:mb-0"
+    class="group m-2 overflow-hidden bg-slate-100 drop-shadow-md dark:bg-cyan-900/50 rounded-lg hover:bg-slate-100 transform transition dark:hover:bg-cyan-950/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg lg:mb-0 md:hover:shadow-lg md:hover:-translate-y-3 ease-in delay-75 duration-300 sal-animate" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="800"
   >
     <NuxtLink :to="path">
       <NuxtImg
@@ -33,13 +33,13 @@ withDefaults(defineProps<Props>(), {
         :alt="alt"
       />
       <div class="flex flex-col px-4 pb-6">
-        <p class="text-xs text-gray-700 dark:text-gray-200 mt-5 font-light">{{ date }}</p>
+        <p class="text-xs text-gray-700 dark:text-gray-300 mt-5 font-light">{{ date }}</p>
         <h2
           class="line-clamp-2 text-ellipsis text-lg text-gray-800 dark:text-gray-200 my-3"
         >
           {{ title }}
         </h2>
-        <p class="line-clamp-2 text-ellipsis text-xs text-gray-800 dark:text-gray-200">
+        <p class="line-clamp-2 text-ellipsis text-sm font-thin text-gray-800 dark:text-gray-200">
           {{ description }}
         </p>
       </div>

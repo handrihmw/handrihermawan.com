@@ -1,44 +1,64 @@
 [
   {
-    "role": "Front End Developer",
-    "place": "Niagahoster",
-    "date": "Jun 2020 - Present",
-    "task": "Revamp website interface, create design system, create documentation program, integrate with hostinger system, build website courses, and audit website performance.",
-    "stack": ["Vue", "Nuxt", "Tailwind", "Storybook", "Laravel", "Inertia", "Tailwind", "Bootstrap", "Sass", "Webpack", "Git", "Jira", "Figma"]
+    "role": "Front End Engineer",
+    "place": "Digital Transformation Office Kementerian Kesehatan Republik Indonesia",
+    "date": "Nov 2023 - Present",
+    "task": [
+      "Bug fixing in the RME (Rekam Medis Elektronik) portal for the needs of health workers and agencies.",
+      "Revamp RME (Rekam Medis Elektronik) to the latest version using Nuxt JS.",
+      "in Progress..."
+    ],
+    "stack": ["Vue", "Nuxt", "Gitlab", "Figma", "React", "Next", "TypeScript"]
   },
   {
     "role": "Front End Developer",
-    "place": "VIVA Media Baru",
+    "place": "PT. Web Media Technology Indonesia (Niagahoster)",
+    "date": "Jun 2020 - Aug 2023",
+    "task": [
+      "Transformed website interface, leading to heightened user engagement and an enriched user experience.",
+      "Introduced a robust design system, ensuring consistent visuals across all pages and minimizing design-related errors.",
+      "Conducted thorough website performance audits, resulting in accelerated page load times and improved site responsiveness.",
+      "Engineered reusable Vue JS components, streamlining development processes and fostering collaboration.",
+      "Integrate with the Hostinger system so that services are better and system security can be maintained."
+    ],
+    "stack": ["Vue", "Nuxt", "Github", "Jira", "Figma", "Laravel", "Twig", "TypeScript"]
+  },
+  {
+    "role": "Front End Developer",
+    "place": "VIVA Media Baru (VIVA.CO.ID)",
     "date": "Feb 2019 - Jun 2020",
-    "task": "Developed several online media such as viva.co.id, jagodangdut, intipseleb, vlix, and 100kpj. created helper functions for advertising needs and website optimization.",
-    "stack": ["Vue", "Nuxt", "Tailwind", "Storybook", "Laravel", "Inertia", "Tailwind", "Bootstrap", "Sass", "Webpack", "Git", "Jira", "Figma"]
+    "task": [
+      "Spearheaded the development of online media portals while also overseeing the enhancement of ad promotion plugins, effectively contributing to a dynamic digital presence.",
+      "Skillfully managed and monitored SEO efforts to ensure consistent online visibility and improved search rankings."
+    ],
+    "stack": ["Laravel", "Bootstrap", "Gitlab"]
   },
   {
     "role": "Web Developer",
     "place": "Astrindo Senayasa",
     "date": "Sep 2018 - Feb 2019",
-    "task": "Developed Human Resource Management System applications, as well as new application releases into test and production.",
-    "stack": ["Vue", "Nuxt", "Tailwind", "Storybook", "Laravel", "Inertia", "Tailwind", "Bootstrap", "Sass", "Webpack", "Git", "Jira", "Figma"]
+    "task": "Engineered Human Resource Management System applications and seamlessly deployed new application releases into both test and production environments, ensuring robust software functionality.",
+    "stack": ["Codeigniter", "Bootstrap"]
   },
   {
     "role": "Programming Spesialist",
     "place": "Kantor Staf Presiden RI",
     "date": "Mar 2018 - Jun 2018",
-    "task": "Analyze database requirements, modify user interfaces, and coordinate with local government agencies.",
-    "stack": ["Vue", "Nuxt", "Tailwind", "Storybook", "Laravel", "Inertia", "Tailwind", "Bootstrap", "Sass", "Webpack", "Git", "Jira", "Figma"]
+    "task": "Evaluated intricate database requirements, refined user interfaces for optimal usability, and effectively collaborated with local government agencies to ensure seamless coordination.",
+    "stack": ["Python", "CKAN", "Bootstrap"]
   },
   {
     "role": "Front End Developer",
     "place": "Bappeda Kota Yogyakarta",
     "date": "May 2017 - Aug 2017",
-    "task": "Redesigned the look of the website using bootstrap and laravel, ensuring it runs responsively. and integration with the database.",
-    "stack": ["Vue", "Nuxt", "Tailwind", "Storybook", "Laravel", "Inertia", "Tailwind", "Bootstrap", "Sass", "Webpack", "Git", "Jira", "Figma"]
+    "task": "Revamped the interface of the Bappeda Kota Yogyakarta website, incorporating a modern design while meticulously analyzing and addressing new user interface requirements.",
+    "stack": ["Codeigniter", "Bootstrap"]
   },
   {
     "role": "Digital Marketing",
     "place": "Relasi Inti Media",
     "date": "Oct 2016 - Jun 2017",
     "task": "Creating content for social media needs such as Instagram, Facebook, and websites as well as direct promotion to resellers and exhibitions.",
-    "stack": ["Vue", "Nuxt", "Tailwind", "Storybook", "Laravel", "Inertia", "Tailwind", "Bootstrap", "Sass", "Webpack", "Git", "Jira", "Figma"]
+    "stack": ["Facebook", "Twitter"]
   }
 ]

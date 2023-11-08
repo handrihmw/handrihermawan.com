@@ -27,7 +27,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <article class="group max-w-screen-md overflow-hidden p-4 hover:rounded-lg dark:hover:bg-cyan-950/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-md hover:bg-slate-100">
+  <article class="group max-w-screen-md overflow-hidden p-4 pb-0 hover:border-b-2 hover:border-dotted hover:border-emerald-500 dark:hover:border-cyan-800">
     <NuxtLink :to="path" class="grid grid-cols-1 gap-1 sm:grid-cols-10 group-hover:opacity-90">
       <div
         class="inline-block content-center pt-2 pb-4 text-left sm:col-span-1"
@@ -40,7 +40,7 @@ withDefaults(defineProps<Props>(), {
         </div>
       </div>
       <div class="py-2 sm:col-span-8">
-        <h2 class="line-clamp-1 text-ellipsis pb-1 text-xl font-semibold text-gray-800 dark:text-gray-300">
+        <h2 class="line-clamp-1 text-ellipsis pb-1 text-xl font-semibold text-gray-800 dark:text-gray-300 transform transition-all duration-500">
           {{ title }}
         </h2>
         <p

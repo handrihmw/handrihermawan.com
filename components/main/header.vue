@@ -30,7 +30,7 @@
               class="flex items-center gap-2"
               :to="menuItem.path"
               :class="{ active: isActive(menuItem.path) }"
-              active-class="border-b-2 border-blue-400 pb-1"
+              active-class="border-b-2 border-cyan-700 pb-1"
               @click="isOpen = false"
             >
               <Icon

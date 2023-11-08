@@ -6,40 +6,35 @@ const props = withDefaults(defineProps<Experiencedata>(), {
   place: "This is Place",
   date: "This is Date",
   task: "This is Task",
-  stack: ["This is Stack"],
+  stack: "This is Stack",
 });
 </script>
 
 <template>
-  <article
-    class="mb-4 flex max-w-screen-md flex-col gap-3 md:gap-10 overflow-hidden px-4 py-6 bg-transparent hover:rounded-lg hover:bg-slate-100/50 dark:hover:bg-cyan-950/50 dark:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-md sm:flex-col md:flex-row"
-  >
-    <div
-      class="w-full pt-1 text-sm font-thin uppercase text-gray-700 dark:text-gray-400 md:w-1/5"
-    >
-      {{ props.date }}
-    </div>
-    <div class="w-4/5">
-      <div class="flex flex-col gap-2">
-        <div
-          class="text-md flex flex-row flex-wrap gap-1 text-gray-800 dark:text-gray-300 md:flex-nowrap md:items-center md:gap-2"
-        >
-          <span>{{ props.role }}</span> • <span>{{ props.place }}</span>
-        </div>
-        <p class="text-sm text-gray-800 dark:text-gray-400">
-          {{ props.task }}
+  <ol class="relative border-l border-gray-400 dark:border-gray-300">
+    <li
+        class="ml-4"
+      >
+      <div class="absolute w-3 h-3 bg-emerald-400 rounded-full mt-1.5 -left-1.5 border border-emerald-500 dark:border-teal-300 dark:bg-teal-400"></div>
+      <time class="text-sm font-thin leading-none text-gray-600 dark:text-gray-300">{{ props.date }}</time>
+      <h3 class="text-xl mb-3 font-medium text-gray-900 dark:text-white mt-2"><span>{{ props.role }}</span> • <span>{{ props.place }}</span></h3>
+      <div v-if="Array.isArray(props.task)">
+        <p class="mb-4 flex gap-2 text-base font-normal text-gray-600 dark:text-gray-300 md:max-w-screen-lg" v-for="(task, taskIndex) in props.task" :key="taskIndex">
+          <div>•</div><span>{{ task }}</span>
         </p>
-        <ul class="flex flex-wrap" aria-label="Technologies used">
-          <li v-for="(stack, index) in props.stack" :key="index" class="mr-1.5 mt-2">
-            <div
-              class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-            >
-              {{ stack }}
-            </div>
-          </li>
-        </ul>
       </div>
-    </div>
-  </article>
+      <span v-else class="mb-4 flex gap-2 text-base font-normal text-gray-600 dark:text-gray-300 md:max-w-screen-lg">{{ props.task }}</span>
+      <ul class="flex flex-wrap pb-6" aria-label="Technologies used">
+            <li v-for="(stack, stackIndex) in props.stack" :key="stackIndex" class="mr-1.5 mt-2">
+              <div
+                class="flex items-center rounded-full dark:bg-teal-400/10 bg-teal-500 px-3 py-1 text-xs font-medium leading-5 dark:text-teal-300 text-slate-50"
+              >
+                {{ stack }}
+              </div>
+            </li>
+          </ul>
+    </li>
+  </ol>
+
 </template>
 

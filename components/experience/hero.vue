@@ -1,7 +1,7 @@
 <template>
   <div class="mb-10 mt-5">
     <h1
-      class="text-3xl font-bold leading-tight text-gray-800 dark:text-gray-200"
+      class="text-4xl font-bold leading-tight text-gray-800 dark:text-gray-200"
     >
       Work
       <span
