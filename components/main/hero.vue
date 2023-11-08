@@ -9,11 +9,11 @@
         </div>
       </div>
       <h1
-        class="text-6xl font-bold text-gray-800 dark:text-gray-200 md:text-6xl"
+        class="text-6xl font-bold text-gray-800 dark:text-gray-200"
       >
         I'm
         <span
-          class="animate-text bg-gradient-to-br from-cyan-500 to-emerald-500 bg-clip-text text-4xl font-bold text-transparent md:text-6xl sal-animate" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="800"
+          class="animate-text bg-gradient-to-br from-cyan-500 to-emerald-500 bg-clip-text text-6xl font-bold text-transparent sal-animate" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease" data-sal-duration="800"
           >Handri</span
         >
         Hermawan.

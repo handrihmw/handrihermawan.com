@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<AboutData>(), {
       class="mb-16 flex flex-col md:mb-0 md:w-1/2 md:items-start md:pr-16 lg:flex-grow lg:pr-24"
     >
       <h1
-        class="mt-6 text-6xl font-semibold capitalize text-gray-800 dark:text-gray-300"
+        class="mt-6 text-5xl md:text-6xl font-semibold capitalize text-gray-800 dark:text-gray-300"
       >
         {{ props.name }}
       </h1>
