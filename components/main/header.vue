@@ -153,6 +153,7 @@ const menuItems = [
   { path: "/blogs", icon: "newspaper", title: "Blog" },
   { path: "/talks", icon: "chat", title: "Talk" },
   { path: "/experience", icon: "briefcase", title: "Experience" },
+  { path: "/project", icon: "wrench-screwdriver", title: "Project" },
   { path: "/about", icon: "information-circle", title: "About" },
 ];
 

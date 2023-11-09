@@ -23,6 +23,8 @@ useHead({
       :key="item.role"
       :role="item.role"
       :place="item.place"
+      :city="item.city"
+      :type="item.type"
       :date="item.date"
       :task="item.task"
       :stack="item.stack"

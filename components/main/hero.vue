@@ -19,9 +19,9 @@
         Hermawan.
       </h1>
       <div class="mt-4 flex flex-col gap-3 lg:flex-row lg:items-center">
-        <hr class="w-10 border bg-gray-800 dark:bg-gray-400" />
-        <span class="md:text-md text-md text-gray-700 dark:text-gray-300">
-          a Front End Developer, Web Performance, and Design System
+        <!-- <hr class="w-5 border border-gray-800 dark:border-gray-600" /> -->
+        <span class="max-w-2xl text-light text-gray-700 dark:text-gray-300">
+          As a dedicated Front End Developer with a proven track record in optimizing Web Performance and implementing Design Systems, I leverage a holistic approach to create compelling and high-performing web experiences. Proficient in enhancing site speed and user interface design, I excel in delivering seamless, user-centric digital solutions.
         </span>
       </div>
     </div>

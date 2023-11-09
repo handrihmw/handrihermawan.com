@@ -1,18 +1,21 @@
 [
   {
     "role": "Front End Engineer",
-    "place": "Digital Transformation Office Kementerian Kesehatan Republik Indonesia",
+    "place": "Kementerian Kesehatan Republik Indonesia",
+    "city": "South Jakarta",
+    "type": "Hybrid",
     "date": "Nov 2023 - Present",
     "task": [
       "Bug fixing in the RME (Rekam Medis Elektronik) portal for the needs of health workers and agencies.",
-      "Revamp RME (Rekam Medis Elektronik) to the latest version using Nuxt JS.",
-      "in Progress..."
+      "Revamp RME (Rekam Medis Elektronik) to the latest version using Nuxt JS."
     ],
     "stack": ["Vue", "Nuxt", "Gitlab", "Figma", "React", "Next", "TypeScript"]
   },
   {
     "role": "Front End Developer",
-    "place": "PT. Web Media Technology Indonesia (Niagahoster)",
+    "place": "Web Media Technology Indonesia (Niagahoster)",
+    "city": "Yogyakarta",
+    "type": "Work From Home",
     "date": "Jun 2020 - Aug 2023",
     "task": [
       "Transformed website interface, leading to heightened user engagement and an enriched user experience.",
@@ -26,6 +29,8 @@
   {
     "role": "Front End Developer",
     "place": "VIVA Media Baru (VIVA.CO.ID)",
+    "city": "East Jakarta",
+    "type": "On Site",
     "date": "Feb 2019 - Jun 2020",
     "task": [
       "Spearheaded the development of online media portals while also overseeing the enhancement of ad promotion plugins, effectively contributing to a dynamic digital presence.",
@@ -36,13 +41,17 @@
   {
     "role": "Web Developer",
     "place": "Astrindo Senayasa",
+    "city": "North Jakarta",
+    "type": "On Site",
     "date": "Sep 2018 - Feb 2019",
     "task": "Engineered Human Resource Management System applications and seamlessly deployed new application releases into both test and production environments, ensuring robust software functionality.",
     "stack": ["Codeigniter", "Bootstrap"]
   },
   {
     "role": "Programming Spesialist",
-    "place": "Kantor Staf Presiden RI",
+    "place": "Kantor Staf Presiden Republik Indonesia",
+    "city": "Central Jakarta",
+    "type": "On Site",
     "date": "Mar 2018 - Jun 2018",
     "task": "Evaluated intricate database requirements, refined user interfaces for optimal usability, and effectively collaborated with local government agencies to ensure seamless coordination.",
     "stack": ["Python", "CKAN", "Bootstrap"]
@@ -50,12 +59,16 @@
   {
     "role": "Front End Developer",
     "place": "Bappeda Kota Yogyakarta",
+    "city": "Yogyakarta",
+    "type": "Hybrid",
     "date": "May 2017 - Aug 2017",
     "task": "Revamped the interface of the Bappeda Kota Yogyakarta website, incorporating a modern design while meticulously analyzing and addressing new user interface requirements.",
     "stack": ["Codeigniter", "Bootstrap"]
   },
   {
     "role": "Digital Marketing",
+    "city": "Yogyakarta",
+    "type": "Hybrid",
     "place": "Relasi Inti Media",
     "date": "Oct 2016 - Jun 2017",
     "task": "Creating content for social media needs such as Instagram, Facebook, and websites as well as direct promotion to resellers and exhibitions.",

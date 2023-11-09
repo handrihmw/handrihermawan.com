@@ -36,7 +36,7 @@ useHead({
     <div
       class="flex items-baseline justify-between text-gray-800 dark:text-gray-200 mt-10"
     >
-      <h2 class="mb-6 text-xl font-semibold lg:text-2xl">Recent Post</h2>
+      <h2 class="mb-6 text-xl font-base lg:text-2xl">Recent Post</h2>
       <div class="text-xs md:text-sm">
         <NuxtLink
           to="/blogs"
