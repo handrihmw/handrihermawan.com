@@ -4,7 +4,7 @@ interface Props {
   title: string
   date: string
   month: string
-  year: string
+  year: number
   description: string
   image: string
   alt: string
@@ -17,7 +17,7 @@ withDefaults(defineProps<Props>(), {
   title: "This is Title",
   date: "This is Date",
   month: "Apr",
-  year: "2023",
+  year: 2023,
   description: "This is Description",
   image: "/nuxt-blog/no-image_cyyits.png",
   alt: "This is Alt",

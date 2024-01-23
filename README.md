@@ -3,7 +3,7 @@
 ### Built with
 
 <p align="center">
-    <img width="200" src="./assets/images/holiday.png">
+    <img width="200" src="./assets/images/holiday.png" alt="holiday">
 </p>
 
 Hacker News clone built with [Nuxt3](https://nuxt.com), [Nuxt-Content2](https://content.nuxtjs.org/blog/announcing-v2/), [Vue3](https://vuejs.org) & [TailwindCss](https://tailwindcss.com/)

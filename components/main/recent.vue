@@ -41,7 +41,6 @@ useHead({
         <NuxtLink
           to="/blogs"
           class="flex items-center hover:border-b-2 hover:border-dotted"
-          aria-label="view all blog"
         >
           View all Posts →
         </NuxtLink>

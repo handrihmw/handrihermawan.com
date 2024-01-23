@@ -13,5 +13,25 @@
     "image": "/images/project/studiogulden.webp",
     "title": "Studio Gulden",
     "link": "https://studiogulden.com"
+  },
+  {
+    "image": "/images/project/movie-alpine.webp",
+    "title": "Movie App with Alpine JS",
+    "link": "https://movie-vite-alpinejs-typescript-tailwind.vercel.app/"
+  },
+  {
+    "image": "/images/project/movie-next.webp",
+    "title": "Movie App with Next JS",
+    "link": "https://movie-next-typescript-tailwind.vercel.app/"
+  },
+  {
+    "image": "/images/project/game-vite.webp",
+    "title": "Game Website with Vite",
+    "link": "https://game-list-with-vite.vercel.app/"
+  },
+  {
+    "image": "/images/project/satudata-banyuwangi.webp",
+    "title": "Satu Data Banyuwangi",
+    "link": "https://satudata-banyuwangi.vercel.app/"
   }
 ]

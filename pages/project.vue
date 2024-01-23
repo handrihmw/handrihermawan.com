@@ -143,7 +143,7 @@ useHead({
                   <img
                     class="w-full p-8"
                     src="https://images-na.ssl-images-amazon.com/images/I/81eJpEEQwYL._AC_SL1500_.jpg"
-                    alt=""
+                    alt="test"
                   />
                 </div>
                 <div class="sub w-full my-auto">
@@ -179,7 +179,7 @@ useHead({
                   <img
                     class="w-full p-8"
                     src="https://image.freepik.com/free-vector/cute-lion-cartoon_160606-353.jpg"
-                    alt=""
+                    alt="test"
                   />
                 </div>
                 <div class="sub w-full my-auto">
@@ -201,7 +201,7 @@ useHead({
                   <img
                     class="w-full p-8"
                     src="https://i.pinimg.com/originals/07/1d/d0/071dd09d7b36e49139fe2cf08ff728a8.jpg"
-                    alt=""
+                    alt="test"
                   />
                 </div>
                 <div class="sub w-full my-auto">
@@ -223,7 +223,7 @@ useHead({
                   <img
                     class="w-full p-8"
                     src="https://image.freepik.com/free-vector/cartoon-owl-tree-branch_194935-43.jpg"
-                    alt=""
+                    alt="test"
                   />
                 </div>
                 <div class="sub w-full my-auto">

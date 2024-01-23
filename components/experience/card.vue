@@ -19,12 +19,12 @@ const props = withDefaults(defineProps<Experiencedata>(), {
       >
       <div class="absolute w-3 h-3 bg-emerald-400 rounded-full mt-1.5 -left-1.5 border border-emerald-500 dark:border-teal-300 dark:bg-teal-400"></div>
       <time class="text-sm font-thin leading-none text-gray-600 dark:text-gray-300">{{ props.date }}</time>
-      <h3 class="text-5xl font-extrabold from-slate-800 dark:from-slate-200 via-slate-200 dark:via-slate-700 to-slate-800 dark:to-slate-400 bg-gradient-to-r bg-clip-text text-transparent leading-normal my-2">{{ props.role }}</h3>
-      <div class="flex align-middle items-center text-gray-600 dark:text-gray-300 gap-2 mb-4">
+      <h2 class="text-5xl font-extrabold from-slate-800 dark:from-slate-200 via-slate-200 dark:via-slate-700 to-slate-800 dark:to-slate-400 bg-gradient-to-r bg-clip-text text-transparent leading-normal my-2">{{ props.role }}</h2>
+      <div class="flex flex-col md:flex-row align-middle md:items-center text-gray-600 dark:text-gray-300 gap-2 mb-4">
         <p class="text-lg font-base">{{ props.place }}</p>
-        <span>•</span>
+        <span class="hidden md:block">•</span>
         <p class="text-lg font-base">{{ props.city }}</p>
-        <span>•</span>
+        <span class="hidden md:block">•</span>
         <p class="text-lg font-base">{{ props.type }}</p>
       </div>
       <div v-if="Array.isArray(props.task)">

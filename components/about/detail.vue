@@ -9,6 +9,8 @@ const props = withDefaults(defineProps<AboutData>(), {
   description: "This is Description",
   stack: "This is Stack",
 });
+
+const cvLink = 'https://drive.google.com/file/d/1_hzwL6l0HkAVzc4yAjScXUhZSYaFlQZL/view?usp=drive_link';
 </script>
 
 <template>
@@ -36,7 +38,7 @@ const props = withDefaults(defineProps<AboutData>(), {
         {{ props.description }}
       </p>
       <NuxtLink
-          to="https://drive.google.com/file/d/1A5pj98aFHLFAfaagslyrMWH01NUy0hbq/view?usp=sharing"
+          :to="cvLink"
           rel="noopener noreferrer"
           target="_blank"
           class="text-slate-800 inline-flex items-center gap-1 hover:text-slate-900 border border-dashed border-slate-800 justify-center focus:outline-none rounded-md text-sm px-8 py-2.5 text-center mr-2 mb-2 dark:border-slate-200 dark:text-slate-200 dark:hover:text-slate-200 dark:hover:bg-slate-600"
